@@ -1,0 +1,154 @@
+header {
+  background-color: #ffa07a;
+  padding: 1px 1px;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+.shop-name {
+  font-size: 46px;
+  color: black;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: bisque;
+  text-align: center;
+}
+
+button {
+  background-color: bisque;
+}
+
+.Products-section {
+  background-color: bisque;
+  margin-bottom: 20px;
+}
+
+.khinkali {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.mwvadi {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.qababi {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.steak {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.acharuli-xachapuri {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.imeruli-xachapuri {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.lobiani {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.kubdari {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.peperoni {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.margarita {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.bravisimo {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+.karbonara {
+  background-color: gainsboro;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: bisque;
+  text-align: center;
+  margin-top: 100px;
+}
+
+body {
+  background-color: bisque;
+}
+
+.our-products {
+  text-align: center;
+  font-weight: 1000;
+  color: darkblue;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.card-boxes-food {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 0;
+}
+
+.card-boxes-food-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 0;
+}
+
+.card-boxes-food-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 0;
+}

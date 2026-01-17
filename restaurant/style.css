@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Science+Gothic:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+US+Trad+Guides&family=Science+Gothic:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(251, 249, 250);
+  color: #333;
+}
+
+.booking {
+  background-color: white;
+  font-weight: 700;
+  font-style: italic;
+  padding: 12px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  font-size: 24px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: darkslategray;
+}
+
+footer {
+  background-color: #ffa07a;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 30px;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+button {
+  font-weight: 700;
+  background-color: lightsalmon;
+  cursor: pointer;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+
+  display: block;
+  margin: 10px auto;
+}
+
+button:hover {
+  background-color: darkorange;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+header {
+  background-color: #ffa07a;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+}
+
+.hero {
+  height: 900px;
+  background: url(https://www.the-emory.co.uk/siteassets/restaurants--bars/abc-kitchen/2025/april/abc-kitchens-2025-1920x1080.jpg?h=1440&scale=both&mode=crop&retinapromorow=false)
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+body {
+  font-family: "Science Gothic", sans-serif;
+}
+
+.hero-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+}
+
+.search-box {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.main-text {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  animation: textFade 2s ease forwards;
+}
+
+@keyframes textFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  animation: logoAnimation 2s ease forwards;
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.About {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  background: #ffe8cc;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  height: 450px;
+  gap: 12px;
+  background-color: bisque;
+}
+
+.photos {
+  border: 1px solid transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.photos img {
+  width: 100%;
+  height: 200px;
+}
+
+.menu {
+  font-size: 20px;
+}
