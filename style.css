@@ -81,10 +81,27 @@ header {
   left: 0;
 }
 
+.hero-image-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-mid-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.hero-mid-img:hover {
+  transform: scale(1.05);
+}
+
 .hero {
   height: 900px;
-  background: url(https://www.the-emory.co.uk/siteassets/restaurants--bars/abc-kitchen/2025/april/abc-kitchens-2025-1920x1080.jpg?h=1440&scale=both&mode=crop&retinapromorow=false)
-    no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,13 +118,6 @@ body {
   padding: 40px;
   border-radius: 10px;
   color: white;
-}
-
-.search-box {
-  width: 400px;
-  height: 40px;
-  padding: 10px;
-  font-size: 16px;
 }
 
 .main-text {
@@ -177,4 +187,102 @@ body {
 
 .menu {
   font-size: 20px;
+}
+
+/* Mobile Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background-color: #ffa07a;
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .search-box-container {
+    display: none;
+  }
+
+  .About {
+    grid-template-columns: 1fr;
+  }
+}
+
+.search-box-container {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 250px;
+  height: 40px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.search-input:focus {
+  width: 300px;
+  background-color: white;
+  border-color: lightsalmon;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input::placeholder {
+  color: #888;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1024px) {
+  .search-input {
+    width: 150px;
+  }
+  .search-input:focus {
+    width: 180px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
