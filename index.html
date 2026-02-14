@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
   <head>
     <meta charset="UTF-8" />
@@ -6,24 +6,39 @@
     <title>"გემრიელი მარკეტი"</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navbar = document.getElementById("navbar");
 
+    hamburger.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
   <body>
     <header class="header">
       <div class="logo">
         <img src="imgs/logo-market.png" width="70" height="70" alt="logo" />
       </div>
-      <nav class="navbar">
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="navbar" id="navbar">
         <ul>
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#About" class="nav-link">About</a></li>
-          <li><a href="#" class="nav-link">Sign in</a></li>
         </ul>
       </nav>
-      <div class="search-box">
-        <input type="text" placeholder="search" />
+
+      <div class="search-box-container">
+        <input type="text" placeholder="search" class="search-input" />
       </div>
+
       <div class="booking">
-        <h3>contact us</h3>
+        <li><a href="sign-in.html" class="nav-link">contact us</a></li>
       </div>
     </header>
 
@@ -37,6 +52,15 @@
           <p class="main-text">
             ადგილი, სადაც ყოველდღიური კვება დღესასწაულად იქცევა.
           </p>
+
+          <div class="hero-image-container">
+            <img
+              src="imgs/logo-market.png"
+              alt="Featured Food"
+              class="hero-mid-img"
+            />
+          </div>
+
           <button>გაიგე მეტი</button>
         </div>
       </section>
